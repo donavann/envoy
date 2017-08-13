@@ -1,6 +1,36 @@
 Version history
 ---------------
 
+1.4.0
+=====
+
+* OSX support
+* Log verbosity compile time flag
+* Hot restart compile time flag
+* Original destination cluster and load balancer
+* WebSocket
+* Virtual cluster priorities removed
+* Route validate clusters option
+* x-envoy-downstream-service-node header
+* x-forwarded-client-cert header
+* HTTP/1 forward proxy
+* HTTP/2 codec settings
+* gRPC/JSON transcoder filter
+* gRPC web filter
+* Rate limit configurable timeout
+* x-envoy-grpc-retry-on header
+* LDS API
+* TLS require_client_certificate option
+* Config check tool
+* Route table check tool
+* Config validation mode
+* --local-address-ip-version option
+* IPv6 support
+* UDP statsd address option
+* Per-cluster DNS resolvers
+* Fault filter enhancements
+* Deprecations...
+
 1.3.0
 =====
 
@@ -58,8 +88,8 @@ Version history
 * The CPU profiler output path is now :ref:`configurable <config_admin>`.
 * A :ref:`watchdog system <config_overview>` has been added that can kill the server if a deadlock
   is detected.
-* A :ref:`route table checking tool <install_tools_route_table_check_tool>` has been added that can be used to test route
-  tables before use.
+* A :ref:`route table checking tool <install_tools_route_table_check_tool>` has been added that can
+  be used to test route tables before use.
 * We have added an :ref:`example repo <extending>` that shows how to compile/link a custom filter.
 * Added additional cluster wide information related to outlier detection to the :ref:`/clusters
   admin endpoint <operations_admin_interface>`.
